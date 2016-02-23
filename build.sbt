@@ -18,7 +18,7 @@ val play = TaskKey[Unit]("play")
 
 botDirectory := file("bots")
 
-scalatronFile := file("lib_unmanaged/Scalatron.jar")
+scalatronFile := file("scalatron_game/Scalatron.jar")
 
 play <<= (botDirectory, name, javaOptions, scalatronFile in Compile, Keys.`package` in Compile) map { (bots, name, javaOptions, ucp, botJar) =>
   IO createDirectory (bots / name)
