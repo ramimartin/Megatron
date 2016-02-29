@@ -1,7 +1,7 @@
 package ar.rami.megatron
 
+import org.specs2._
 
-/*
 class PluginToServerProtocolTest extends Specification{
   def is = s2"""
 
@@ -15,4 +15,3 @@ class PluginToServerProtocolTest extends Specification{
   def e1 = Status("Megatron").toString must be equalTo("Status(text=Megatron)")
 
 }
-*/

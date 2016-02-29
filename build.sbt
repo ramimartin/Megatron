@@ -24,6 +24,8 @@ val log: ProcessLogger = new ProcessLogger {
 
 botDirectory := file("bots")
 
+libraryDependencies ++= Seq("org.specs2" %% "specs2-core" % "3.7" % "test")
+
 scalacOptions in Test ++= Seq("-Yrangepos")
 
 publish <<= (botDirectory, name, javaOptions/*, scalatronFile in Compile*/, Keys.`package` in Compile) map { (bots, name, javaOptions, /*ucp,*/ botJar) =>
